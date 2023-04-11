@@ -30,7 +30,9 @@ struct ListView: View {
             VStack {
                 HStack {
                     TextField("Enter a Mood",text: $newItemDescription)
-                    
+                    TextField("Enter an emoji", text: $newItemEmoji)
+                }
+                HStack{
                     Button(action: {
                         Task {
                             //Write to Database
